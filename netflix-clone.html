@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/netflix-clone.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/general.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/section.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Netflix clonecording</title>
+<style id="aby-style"></style></head>
+<body>
+    <header class="header">
+        <nav class="header_header">
+            <div class="header_left">
+                <div class="header_logo">
+                    <a href="#">
+                        <img src="./img/netflix_logo.png" alt="netfilx_logo">
+                    </a>
+                </div>
+                <div class="mobile_menu">
+                    <ul class="menu_list">
+                        <a href="#"><li>홈</li></a>
+                        <a href="#"><li>시리즈</li></a>
+                        <a href="#"><li>영화</li></a>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="header_right">
+                <div class="header_right_avatar">
+                    <a href="#">
+                        <img src="./img/avatar.png" alt="avatar">
+                    </a>
+                </div>
+            </div>
+            
+        </nav>
+        
+    </header>
+    <main class="main_page">
+        <div class="landing_image">
+            
+               <img src="./img/background.jpg" alt="main-page">
+        </div>
+        <div class="main_scription">
+            
+
+        </div>
+    </main>
+    <section>
+        <div class="content-list">
+            <h1>지금 뜨는 콘텐츠</h1>
+            <br>
+            <div class="movie-list">
+            <div class="item">
+                <img src="./img/movie_poster1.jpg" alt="movie_poster1">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster2.jpg" alt="movie_poster2">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster3.jpg" alt="movie_poster3">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster4.jpg" alt="movie_poster4">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster5.jpg" alt="movie_poster5">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster6.jpg" alt="movie_poster6">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster7.jpg" alt="movie_poster7">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster8.jpg" alt="movie_poster8">
+            </div>
+            </div>
+        </div>
+
+        <div class="content-list">
+            <h1>많은 사람들이 보고있는 콘텐츠</h1>
+            <br>
+            <div class="movie-list">
+            <div class="item">
+                <img src="./img/movie_poster9.jpg" alt="movie_poster9">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster10.jpg" alt="movie_poster10">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster11.jpg" alt="movie_poster11">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster12.jpg" alt="movie_poster12">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster13.jpg" alt="movie_poster13">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster14.jpg" alt="movie_poster14">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster15.jpg" alt="movie_poster15">
+            </div>
+            <div class="item">
+                <img src="./img/movie_poster16.jpg" alt="movie_poster16">
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

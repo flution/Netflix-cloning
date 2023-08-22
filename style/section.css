@@ -1,0 +1,28 @@
+.content-list {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.movie-list {
+    display: flex; 
+    flex-wrap: nowrap; 
+    width: 100%;
+
+}
+
+.item {
+    display: flex; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    
+    
+    gap: 10px; 
+    padding: 10px;
+    
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
